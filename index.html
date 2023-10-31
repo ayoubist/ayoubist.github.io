@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Side Navigation Bar in HTML CSS JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
+  </head>
+  <body>
+
+            <!------------------ contact me buttons ------------------------------->
+
+
+    
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="images/logo.png" alt=""></i>HK SHOP ONLINE
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <img src="images/profile.jpg" alt="" class="profile" />
+
+        <!------------------ contact me buttons ------------------------------->
+        <a href="https://www.facebook.com/messages/t/265426323824722" target="_blank">
+          <button class="button-92" role="button" style="position: absolute; top: 24px; left: 250px; width:90px; height: 30px; ">Facebook</button>
+        </a>
+
+        <!-- --------------------------------------------------------- -->
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+
+          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Overview</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Magic build</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Filters</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-filter"></i>
+              </span>
+              <span class="navlink">Filter</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cloud-upload"></i>
+              </span>
+              <span class="navlink">Upload new</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_setting"></div>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-flag"></i>
+              </span>
+              <span class="navlink">Notice board</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-medal"></i>
+              </span>
+              <span class="navlink">Award</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">Setting</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-layer"></i>
+              </span>
+              <span class="navlink">Features</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <div class="wrapper">
+      <div class="cart-nav">
+        <div class="icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+        </div>
+        <div class="item-count">0</div>
+      </div>
+      <div class="card">
+        <img src="images/headphone.png" alt="">
+        <div class="content">
+          <div class="row">
+            <div class="details">
+              <span>Headphone</span>
+              <p>Premium headphone</p>
+            </div>
+            <div class="price">$30</div>
+          </div>
+          <div class="buttons">
+            <button>Buy Now</button>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/watch.png" alt="">
+        <div class="content">
+          <div class="row">
+            <div class="details">
+              <span>Apple Watch</span>
+              <p>Premium digital watch</p>
+            </div>
+            <div class="price">$80</div>
+          </div>
+          <div class="buttons">
+            <button>Buy Now</button>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/airpods.png" alt="">
+        <div class="content">
+          <div class="row">
+            <div class="details">
+              <span>Apple Airpod</span>
+              <p>Premium black airpod</p>
+            </div>
+            <div class="price">$50</div>
+          </div>
+          <div class="buttons">
+            <button>Buy Now</button>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <dr>
+
+      
+
+
+      
+
+
+
+
+
+
+    
+
+  </body>
+</html>
